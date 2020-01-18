@@ -63,8 +63,8 @@ export const MovingBubbles = (props) => {
 
     useEffect(() => {
         let mouseX = 0, mouseY = 0;
-        const windowHalfX = window.innerWidth / 2;
-        const windowHalfY = window.innerHeight / 2;
+        let windowHalfX = window.innerWidth / 2;
+        let windowHalfY = window.innerHeight / 2;
         let spheres = [];
 
         document.addEventListener( 'mousemove', () => {
